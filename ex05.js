@@ -1,5 +1,5 @@
 module.exports = function flatten(array, shallow) {
-    return (!shallow) ? isFlatten(array, [], true) : flattenOnce(array, [], true);
+    return (!shallow) ? isFlatten(array, []) : flattenOnce(array, [], true);
 }
 
 function isFlatten(array, new_array) {
@@ -24,5 +24,3 @@ function flattenOnce(array, new_array, flag) {
     }
     return new_array;
 }
-
-// console.log(func([1, [2], [3, [[[4]], 5]]], true))
