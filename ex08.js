@@ -5,7 +5,6 @@ module.exports = function intersecion(...arrays) {
         for(let i = 1; i < arrays.length; i++) {
             if(isEqual(arrays[0][j], arrays[i])) count++;
         }
-        console.log(count)
         if(count === arrays.length) new_array.push(arrays[0][j])
     }
     return new_array;
