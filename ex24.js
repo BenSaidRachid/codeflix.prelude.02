@@ -1,3 +1,3 @@
-module.exports = function isObject(arg) {
-    return typeof(arg) === "object";
+module.exports = function isObject(value) {
+    return typeof(value) === "object";
 }

@@ -1,3 +1,3 @@
-module.exports = function isUndefined(object, properties) {
-    return typeof(arg) === "undefined";
+module.exports = function isUndefined(value) {
+    return value === undefined;
 }
