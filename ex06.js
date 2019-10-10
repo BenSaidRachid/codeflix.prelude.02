@@ -9,20 +9,5 @@ module.exports = function without(array, ...values) {
         if(flag) new_array.push(value)
     }
 
-    console.log(new_array)
-}
-
-function isFlattened(value) {
-    let new_array = [];
-    if(typeof(value) === undefined) return;
-    
-    for (const array of value) {
-        console.log(array)
-        if (Array.isArray(array)) {
-            isFlattened(array)
-        } else {
-            new_array.push(array);
-        }
-    }
-    console.log(new_array)
+    return new_array;
 }
