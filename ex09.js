@@ -6,7 +6,7 @@ module.exports = function difference(array, ...others) {
         for (const iterator of others) {
             flag = isNotEqual(value, iterator);
         }
-        if(flag) new_array.push(value)
+        if(flag) new_array.push(value);
     }
     return new_array;
 }
