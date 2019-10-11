@@ -1,8 +1,7 @@
 module.exports = function pick(obj, ...options) {
     const [firstOpts] = options
     const newObj = {}
-  
-    console.log(typeof firstOpts)
+
     if (typeof firstOpts === 'function') {
         const callback = firstOpts
   
